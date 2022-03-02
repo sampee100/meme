@@ -23,12 +23,15 @@ class Footer extends Component {
 
   previousClick()
   {
-    this.setState({ prev : this.state.prev-1})
-    this.setState({ next : this.state.next-1})
+    if(this.state.prev>0){
+      this.setState({ prev : this.state.prev-1})
+      this.setState({ next : this.state.next-1})
+    }
   }
   
   nextClick()
   {
+    if(this.state.next<100)
     this.setState({ prev : this.state.prev+1})
     this.setState({ next : this.state.next+1})
   }

@@ -36,7 +36,7 @@ class Section extends Component {
     var img = document.createElement("img")
     img.setAttribute('crossorigin', 'anonymous');
     // img.src=process.env.PUBLIC_URL + "/meme.jpg"
-    img.src = this.state.data.memes[this.props.next].url
+    img.src = this.state.data.memes[this.props.next-1].url
 
     img.onload = () => {
       ctx.drawImage(img, 0, 0, 600, 600)
