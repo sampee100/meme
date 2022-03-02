@@ -1,0 +1,65 @@
+.Section
+{
+    display: flex;
+    justify-content: center;
+}
+.textInput, .imgSection, .buttons
+{
+    margin-top: 110px;
+    width: 600px;
+    height : 500px;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    display : flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.textInput .text1, .text2
+{
+    font-size:30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.textInput input
+{
+    margin-top: 0;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+}
+.imgSection
+{
+    padding:0;
+    border : 1px solid black;
+    position : relative;
+}
+.buttons button
+{
+    padding: auto;
+    margin: 0 auto;
+    padding : 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: #4a5770;
+    justify-content: center;
+    width: 120px;
+    font-weight: bold;
+    outline : none;
+    border :none;
+    border-radius : 4px;
+}
+.buttons .saveMeme
+{
+    margin-top:90px;
+    background-color: #f00;
+    outline : none;
+    border :none;
+    border-radius : 4px;
+}
