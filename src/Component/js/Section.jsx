@@ -50,7 +50,7 @@ class Section extends Component {
     var canvas = document.getElementById("canvas");
     // const ctx = canvas.getContext("2d")
     var image = canvas.toDataURL();
-    // console.log(image)
+    console.log(image)
     var link = document.createElement('a');
     link.download = "my-image.png";
     link.href = image;
@@ -77,10 +77,10 @@ class Section extends Component {
         </div>
 
         <div className="buttons">
-          <button className="up" onClick={this.state.text1Active ? () => this.setState({ top1: this.state.top1 - 2 }) : () => this.setState({ top2: this.state.top2 - 5 })}>^ UP</button>
-          <button className="down" onClick={this.state.text1Active ? () => this.setState({ top1: this.state.top1 + 2 }) : () => this.setState({ top2: this.state.top2 + 5 })}>v DOWN </button>
-          <button className="left" onClick={this.state.text1Active ? () => this.setState({ left1: this.state.left1 - 2 }) : () => this.setState({ left2: this.state.left2 - 5 })}>{`<`} LEFT</button>
-          <button className="right" onClick={this.state.text1Active ? () => this.setState({ left1: this.state.left1 + 2 }) : () => this.setState({ left2: this.state.left2 + 5 })}>{`>`} RIGHT</button>
+          <button className="up" onClick={this.state.text1Active ? () => this.setState({ top1: this.state.top1 - 12 }) : () => this.setState({ top2: this.state.top2 - 12 })}>^ UP</button>
+          <button className="down" onClick={this.state.text1Active ? () => this.setState({ top1: this.state.top1 + 12 }) : () => this.setState({ top2: this.state.top2 + 12 })}>v DOWN </button>
+          <button className="left" onClick={this.state.text1Active ? () => this.setState({ left1: this.state.left1 - 12 }) : () => this.setState({ left2: this.state.left2 - 12 })}>{`<`} LEFT</button>
+          <button className="right" onClick={this.state.text1Active ? () => this.setState({ left1: this.state.left1 + 12 }) : () => this.setState({ left2: this.state.left2 + 12 })}>{`>`} RIGHT</button>
           <button className="saveMeme" onClick={() => this.download()}>Save meme</button>
         </div>
       </div>
